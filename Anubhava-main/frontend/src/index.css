@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer pages {
+  .input {
+    @apply w-full border border-gray-300 rounded-lg px-4 py-3
+           focus:outline-none focus:ring-2 focus:ring-emerald-500;
+  }
+}
+
+/* current step circle */
+.roadmap-steps .ant-steps-item-process .ant-steps-item-icon {
+  background-color: #07523e !important; /* green */
+  border-color: #07523e !important;
+}
+
+/* finished step circles */
+.roadmap-steps .ant-steps-item-finish .ant-steps-item-icon {
+  background-color: #07523e !important; /* green */
+  border-color: #07523e !important;
+}
+
+/* make the step number inside circle white for contrast */
+.roadmap-steps .ant-steps-item-icon .ant-steps-icon {
+  color: #ffffff !important;
+}
+.roadmap-steps .ant-steps-item-icon {
+  background-color: #07523e !important;
+  border-color: #07523e !important;
+}
+
+.ant-menu-item-disabled {
+  color: #9ca3af !important;   /* gray-400 */
+  cursor: not-allowed;
+}
+
+/* Hover state */
+.ant-menu-light .ant-menu-item:hover {
+  background-color: #2c6d58 !important; /* light green */
+  color: #ffffff !important;
+}
+
+/* Selected (clicked) state */
+.ant-menu-light .ant-menu-item-selected {
+  background-color: #07523e !important; /* dark green */
+  color: #ffffff !important;
+}
+
+/* Ensure text + icon stay white when selected */
+.ant-menu-light .ant-menu-item-selected a,
+.ant-menu-light .ant-menu-item-selected span,
+.ant-menu-light .ant-menu-item-selected .anticon {
+  color: #ffffff !important;
+}
+
+/* Icon color on hover */
+.ant-menu-light .ant-menu-item:hover .anticon {
+  color: #ffffff !important;
+}
+
+/* Smooth transition */
+.ant-menu-item {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
